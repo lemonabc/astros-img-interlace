@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "image-magic":"^0.0.2"
+    "image-magic":"~0.0.4"
   },
   "author": "",
   "license": "ISC"
