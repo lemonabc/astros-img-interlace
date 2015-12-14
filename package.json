@@ -1,14 +1,17 @@
 {
   "name": "astros-img-interlace",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "_version": "0.0.4",
   "description": "",
   "main": "astros-img-interlace.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "image-magic":"~0.0.4"
+    "image-magic":">0.0.4"
   },
-  "author": "",
+  "repository": "lemonabc/astros-img-interlace",
+  "email" : "ilemonabc@qq.com",
+  "author": "lemonabc <ilemonabc@qq.com>",
   "license": "ISC"
 }
