@@ -9,8 +9,8 @@ module.exports = new astro.Middleware({
     fileType: 'img',
     status  : 'release'
 }, function(asset, next) {
-
-    if(!asset.prjCfg.interlace){
+    var isInterlace = asset.prjCfg.interlace || this.config.interlace;
+    if(isInterlace){
         next(asset);return;
     }
 
