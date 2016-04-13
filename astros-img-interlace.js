@@ -10,11 +10,14 @@ module.exports = new astro.Middleware({
     status  : 'release'
 }, function(asset, next) {
     var isInterlace = asset.prjCfg.interlace || this.config.interlace;
-    if(isInterlace){
+    if(isInterlace === false){
         next(asset);return;
     }
 
     let cache = path.join(asset.prjCfg.imgCache, '_interlace');
+    if(!fs.existsSync(cache)){
+        require('file-plus').createFileSync(cache);
+    }
     
     images.interlace(asset.filePath, cache, function(error){
 
