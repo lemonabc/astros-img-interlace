@@ -10,7 +10,7 @@
     "file-plus": "~1.0.0"
   },
   "peerDependencies": {
-    "image-magic":"~1.0.1"
+    "image-magic":"~1.0.2"
   },
   "repository": "lemonabc/astros-img-interlace",
   "email" : "ilemonabc@qq.com",
