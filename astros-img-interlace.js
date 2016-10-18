@@ -10,7 +10,7 @@ module.exports = new astro.Middleware({
     status  : 'release'
 }, function(asset, next) {
     var isInterlace = asset.prjCfg.interlace || this.config.interlace;
-    if(isInterlace === false){
+    if(isInterlace === false || asset.extname == '.gif'){
         next(asset);return;
     }
 
